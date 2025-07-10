@@ -8,6 +8,7 @@ import {
 } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import * as React from 'react'
+
 import appCss from '~/styles/app.css?url'
 
 export const Route = createRootRoute({
