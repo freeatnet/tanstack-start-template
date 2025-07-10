@@ -5,25 +5,25 @@ import {
   Outlet,
   Scripts,
   createRootRoute,
-} from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import * as React from 'react'
+} from "@tanstack/react-router";
+import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
+import * as React from "react";
 
-import appCss from '~/styles/app.css?url'
+import appCss from "~/styles/app.css?url";
 
 export const Route = createRootRoute({
   head: () => ({
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [{ rel: "stylesheet", href: appCss }],
   }),
   component: RootComponent,
-})
+});
 
 function RootComponent() {
   return (
     <RootDocument>
       <Outlet />
     </RootDocument>
-  )
+  );
 }
 
 function RootDocument({ children }: { children: React.ReactNode }) {
@@ -37,7 +37,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           <Link
             to="/"
             activeProps={{
-              className: 'font-bold',
+              className: "font-bold",
             }}
             activeOptions={{ exact: true }}
           >
@@ -50,5 +50,5 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  )
+  );
 }

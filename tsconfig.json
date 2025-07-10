@@ -1,10 +1,5 @@
 {
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.cjs",
-    "**/*.js"
-  ],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js"],
   "compilerOptions": {
     "esModuleInterop": true,
     "jsx": "react-jsx",

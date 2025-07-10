@@ -1,4 +1,9 @@
 {
+  // enable globally (here: format on save)
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
   "files.watcherExclude": {
     "**/routeTree.gen.ts": true
   },
