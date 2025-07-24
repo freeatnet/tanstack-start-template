@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "allow": ["Bash(pnpm format:*)","Bash(pnpm lint:*)","Bash(pnpm tsc:typecheck)"],
+    "deny": []
+  }
+}
