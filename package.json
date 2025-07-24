@@ -10,8 +10,9 @@
     "start": "node .output/server/index.mjs",
     "format:ci:all": "prettier --check .",
     "format:fix:all": "prettier --write .",
+    "lint:ci:all": "eslint --max-warnings=0 --report-unused-disable-directives",
     "lint:fix:all": "eslint --fix --report-unused-disable-directives",
-    "lint:ci:all": "eslint --max-warnings=0 --report-unused-disable-directives"
+    "tsc:typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.13.8",
