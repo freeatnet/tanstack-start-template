@@ -1,5 +1,6 @@
-import { createAPIFileRoute } from "@tanstack/react-start/api";
+import { createAPIFileRoute } from "@tanstack/react-start";
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
 export const Route = createAPIFileRoute("/api/status")({
   GET: () => {
     return Response.json(
@@ -8,7 +9,7 @@ export const Route = createAPIFileRoute("/api/status")({
         timestamp: new Date().toISOString(),
         uptime: process.uptime(),
         version: "1.0.0",
-        environment: process.env.NODE_ENV || "development",
+        environment: process.env.NODE_ENV ?? "development",
       },
       {
         status: 200,
