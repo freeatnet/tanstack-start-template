@@ -15,7 +15,7 @@ export const Route = createAPIFileRoute("/api/status")({
         headers: {
           "Content-Type": "application/json",
         },
-      }
+      },
     );
   },
 });
